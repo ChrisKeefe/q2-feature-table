@@ -18,7 +18,7 @@
             <td>{{ stats.count }}</td>
             <td>{{ stats.min }}</td>
             <td>{{ stats.max }}</td>
-            <td>{{ stats.mean }}</td>
+            <td>{{ stats.mean | round(3, 'common') }}</td>
           </tr>
         </tbody>
       </table>
@@ -38,7 +38,7 @@
         <tbody>
           <tr>
           {% for percentile in stats.seven_num_summ %}
-            <td>{{ percentile }}</td>
+            <td>{{ percentile | round(2, 'common') }}</td>
         {% endfor %}
           </tr>
         </tbody>
