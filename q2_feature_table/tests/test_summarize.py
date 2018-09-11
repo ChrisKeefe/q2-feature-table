@@ -93,7 +93,7 @@ class TabulateSeqsTests(TestCase):
             self.assertTrue('<td>8</td>' in open(expected_fp).read())
             self.assertTrue('<td>1</td>' in open(expected_fp).read())
             self.assertTrue('<td>10</td>' in open(expected_fp).read())
-            self.assertTrue('<td>3.625</td>' in open(expected_fp).read())
+            self.assertTrue('<td>3.62</td>' in open(expected_fp).read())
             self.assertTrue('<td>1.14</td>' in open(expected_fp).read())
             self.assertTrue('<td>1.63</td>' in open(expected_fp).read())
             self.assertTrue('<td>2</td>' in open(expected_fp).read())
